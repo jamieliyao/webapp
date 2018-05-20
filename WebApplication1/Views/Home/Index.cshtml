@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="left side-menu">
+
+    <!--- Divider -->
+    <div id="sidebar-menu">
+        <ul>
+            <li>
+                <a asp-controller="home" asp-action="SubPage" class="waves-effect"><i class="md md-list"></i><span> 活动目录系统 </span></a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="EmailSys" class="waves-effect"><i class="md md-mail"></i><span> 邮件系统 </span></a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="VirtualSys" class="waves-effect"><i class="ion-upload"></i><span> 虚拟化系统 </span></a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="PrinterSys" class="waves-effect"><i class="ion-printer"></i> <span> 打印系统 </span> </a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="MonitorSys" class="waves-effect"><i class="md md-computer"></i><span> 监控系统 </span></a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="SCOMSys" class="waves-effect"><i class="ion-monitor"></i> <span> SCOM </span></a>
+            </li>
+
+            <li>
+                <a asp-controller="home" asp-action="SCCMSys" class="waves-effect"><i class="md md-verified-user"></i><span> SCCM </span></a>
+
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="content-page" >
+    <img src="~/images/e.jpg" class="img-responsive" alt="aa" />
+</div>

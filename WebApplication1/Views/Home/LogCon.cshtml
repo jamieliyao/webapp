@@ -1,0 +1,109 @@
+﻿@model List<EventLogsViewModel>
+@{
+    Layout = null;
+}
+<br /><br />
+      <div class="col-md-12">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h3>Event Log Alarm</h3>
+              </div>
+<div class="panel-body">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Event ID</th>
+                <th>Description</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        @*<tbody>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            Collection Rule for Software Update Installation Failed
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>314,315</td>
+                        <td>打印机脱机或网络异常事件</td>
+                        <td></td>
+                    </tr>
+                </tbody>*@
+            </table>
+        </div>
+        <div class="panel-heading">
+            <h3>Event Log Information</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Event ID</th>
+                        <th>Description</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.EventId</td>
+                        <td>@item.Description</td>
+                        <td>@item.Count</td>
+                    </tr>
+
+            }
+                    @*<tr>
+                        <td>6005</td>
+                        <td>Collection Rule for Windows Restarted Events</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>4202</td>
+                        <td>Collection rule for Network Adapter was Disconnected from the Network</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1001</td>
+                        <td>Collection Rule for Windows Restart Events (restarted from bugcheck)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Collection Rule for Software Updates Installation Events</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7021,7024</td>
+                        <td>Collection rule for unexpected service terminations</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7000,7001</td>
+                        <td>
+                            Collection rule for events indicating a service or driver has failed to start.
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            Collection Rule for Software Updates Scheduled Installation Events
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6006</td>
+                        <td>
+                            Collection Rule for Windows Clean Restart Events
+                        </td>
+                        <td></td>
+                    </tr>*@
+                </tbody>
+            </table>
+        </div>
+
+</div>
+          </div>
